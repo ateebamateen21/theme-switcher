@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* variables */
+:root {
+  --bg-color: white;
+  --color: black;
+}
+
+.navbar {
+  display: flex;
+
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.5rem auto;
+  border-radius: 50px;
+  padding: 1rem;
+
+  outline: 2px solid black;
+
+  label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.3rem 0.3rem;
+    border-radius: 50px;
+    background-color: #665f5f;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #000;
+      color: #665f5f;
+    }
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  height: 80vh;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  color: var(--color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color);
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color);
+  }
+}
+
+/* dont use !important here, doing so won't allow you to switch themes more than once. */
+:root:has(#light:checked) {
+--bg-color: white;
+  --color: black;
+}
+:root:has(#dark:checked) {
+  --bg-color: #000;
+  --color: white;
+}
+:root:has(#blue:checked) {
+  --bg-color: blue;
+  --color: white;
+}
+
+:root:has(#red:checked) {
+  --bg-color: red;
+  --color: white;
+}
+
+:root:has(#green:checked) {
+  --bg-color: green;
+  --color: white;
+}
+
+:root:has(#yellow:checked) {
+  --bg-color: yellow;
+  --color: black;
+}
