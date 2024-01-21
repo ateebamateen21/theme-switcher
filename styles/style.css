@@ -1,0 +1,63 @@
+@import './globals.css';
+
+
+
+.navbar {
+  display: flex;
+  gap: 0.7rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.4rem auto;
+  border-radius: 50px;
+  padding: 1rem;
+  background-color: rgb(253, 249, 244);
+
+  /* outline: 2px solid black; */
+
+  label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.3rem 0.3rem;
+    border-radius: 50px;
+    /* background-color: #665f5f; */
+    transition: all 0.3s ease;
+    &:hover {
+      background-color:antiquewhite ;
+      /* color: var(--color); */
+    }
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  width: 90%;
+  height: 80vh;
+  border-radius: 10px;
+  /* background-color: var(--bg-color);
+  color: var(--color); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color);
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color);
+  }
+}
+
